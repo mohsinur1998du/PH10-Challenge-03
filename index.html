@@ -30,38 +30,10 @@
     </style>
   </head>
   <body class="font-manrope container mx-auto">
-    <header class="">
+    <header>
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
             <div class="flex items-center gap-0.5">
               <i
                 class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"
@@ -71,29 +43,88 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a class="font-semibold">Home</a></li>
-              <li><a class="text-[#737373]">Services</a></li>
-              <li><a class="text-[#737373]">Portfolio</a></li>
-              <li><a class="text-[#737373]">Blogs</a></li>
-              <li><a class="text-[#737373]">Contact Us</a></li>
+              <li
+                class="hover:text-primay transition-colors duration-300 ease-in-out"
+              >
+                <a class="font-semibold">Home</a>
+              </li>
+              <li
+                class="hover:text-primay transition-colors duration-300 ease-in-out"
+              >
+                <a class="text-[#737373]">Services</a>
+              </li>
+              <li
+                class="hover:text-primay transition-colors duration-300 ease-in-out"
+              >
+                <a class="text-[#737373]">Portfolio</a>
+              </li>
+              <li
+                class="hover:text-primay transition-colors duration-300 ease-in-out"
+              >
+                <a class="text-[#737373]">Blogs</a>
+              </li>
+              <li
+                class="hover:text-primay transition-colors duration-300 ease-in-out"
+              >
+                <a class="text-[#737373]">Contact Us</a>
+              </li>
             </ul>
           </div>
-          <div class="navbar-end hidden lg:flex lg:items-center lg:gap-4">
-            <div>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="navbar-end lg:flex lg:items-center lg:gap-4">
+            <div class="hidden md:flex md:items-center md:gap-5">
+              <div class="flex items-center gap-5 text-xl">
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass text-slate-500"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa-solid fa-cart-shopping text-slate-500"></i
+                ></a>
+              </div>
+              <div class="bg-[#ABEF5F] rounded-full">
+                <a
+                  class="flex items-center justify-center px-3 py-2 gap-2"
+                  href="#"
+                  ><p>Book Consult</p>
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"
+                  ></i
+                ></a>
+              </div>
             </div>
-            <div>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-            <div class="bg-[#ABEF5F] rounded-full">
-              <a
-                class="flex items-center justify-center px-3 py-2 gap-3"
-                href="#"
-                ><p>Book Consult</p>
-                <i
-                  class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"
-                ></i
-              ></a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+              >
+                <li
+                  class="hover:text-primay transition-colors duration-300 ease-in-out"
+                >
+                  <a class="text-[#737373]">Home</a>
+                </li>
+                <li
+                  class="hover:text-primay transition-colors duration-300 ease-in-out"
+                >
+                  <a class="text-[#737373]">Services</a>
+                </li>
+                <li
+                  class="hover:text-primay transition-colors duration-300 ease-in-out"
+                >
+                  <a class="text-[#737373]">Portfolio</a>
+                </li>
+                <li
+                  class="hover:text-primay transition-colors duration-300 ease-in-out"
+                >
+                  <a class="text-[#737373]">Blogs</a>
+                </li>
+                <li
+                  class="hover:text-primay transition-colors duration-300 ease-in-out"
+                >
+                  <a class="text-[#737373]">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -124,7 +155,7 @@
         </div>
       </div>
     </header>
-    <main class="">
+    <main>
       <div class="hero bg-[#E9E9E9]">
         <div
           class="hero-content flex flex-col lg:flex-row justify-center items-center"
@@ -280,13 +311,11 @@
               accents.
             </p>
           </div>
-          <div
-            class="grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-5 mb-10"
-          >
+          <div class="grid grid-rows-2 grid-cols-1 lg:grid-cols-12 gap-2 mb-10">
             <div
-              class="border border-slate-300 p-6 md:flex md:items-center md:justify-center md:gap-4 md:col-start-1 lg:col-end-4 rounded-lg"
+              class="border border-slate-300 p-6 lg:flex lg:items-center lg:justify-center lg:gap-4 lg:col-start-1 lg:col-end-8 rounded-lg"
             >
-              <img class="p-6 mx-auto" src="./assets/img1.png" alt="" />
+              <img class="p-5 mx-auto" src="./assets/img1.png" alt="" />
               <div class="space-y-4">
                 <h1 class="text-4xl font-bold">Commercial</h1>
                 <p class="text-[#737373]">
@@ -304,16 +333,24 @@
                 </button>
               </div>
             </div>
-            <div class="border border-slate-300 shadow-md bg-white rounded-lg">
-              <img class="p-6 mx-auto" src="./assets/img2.png" alt="" />
-            </div>
-            <div class="border border-slate-300 shadow-md bg-white rounded-lg">
-              <img class="p-6 mx-auto" src="./assets/img3.png" alt="" />
+            <div
+              class="border border-slate-300 shadow-md bg-white rounded-lg lg:col-start-8 lg:col-span-5"
+            >
+              <img
+                class="p-4 lg:p-10 object-fill mx-auto"
+                src="./assets/img2.png"
+                alt=""
+              />
             </div>
             <div
-              class="border border-slate-300 p-6 md:flex md:items-center md:justify-center gap-4 md:col-start-2 md:col-span-2 rounded-lg"
+              class="border border-slate-300 shadow-md bg-white rounded-lg lg:col-start-1 lg:col-span-3"
             >
-              <img class="p-6 mx-auto" src="./assets/img4.png" alt="" />
+              <img class="p-4 lg:p-10 mx-auto" src="./assets/img3.png" alt="" />
+            </div>
+            <div
+              class="border border-slate-300 p-6 lg:flex lg:items-center lg:justify-center gap-4 lg:col-start-4 lg:col-span-6 rounded-lg"
+            >
+              <img class="p-5 mx-auto" src="./assets/img4.png" alt="" />
               <div class="space-y-4">
                 <h1 class="text-4xl font-bold">Commercial</h1>
                 <p class="text-[#737373]">
@@ -331,15 +368,21 @@
                 </button>
               </div>
             </div>
-            <div class="border border-slate-300 shadow-md bg-white rounded-lg">
-              <img class="p-6 mx-auto" src="./assets/img5.png" alt="" />
+            <div
+              class="border border-slate-300 shadow-md bg-white rounded-lg lg:col-start-10 lg:col-span-3"
+            >
+              <img
+                class="p-4 lg:p-10 mx-auto object-fill"
+                src="./assets/img5.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
 
       <!-- Let's Discuss Next Project -->
-      <div class="hero mt-10 lg:mt-24 bg-[#E9E9E9]">
+      <div class="hero mt-10 mb-10 lg:mt-24 bg-[#E9E9E9]">
         <div class="mx-5">
           <div class="mt-10 mb-10">
             <button
@@ -398,7 +441,9 @@
         </div>
       </div>
     </main>
-    <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
+    <footer
+      class="footer footer-center lg:mt-10 mb-5 bg-[#1C1C1C] text-primary-content p-10"
+    >
       <aside>
         <div class="flex items-center gap-0.5">
           <i
